@@ -1,0 +1,89 @@
+:root {
+--Yellow: hsl(47, 88%, 63%);
+--White: hsl(0, 0%, 100%);
+--Gray-500: hsl(0, 0%, 42%);
+--Gray-950: hsl(0, 0%, 7%);
+
+--font-family-default: "Figtree", sans-serif;
+--font-optical-sizing: auto;
+--fw-regular: 500;
+--fw-bold: 800;
+}
+
+ /* Simple CSS reset */
+
+ *, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    font: inherit;
+}
+
+img, svg {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    background-color: var(--Yellow);
+    color: var(--Gray-500);
+    font-family: var(--font-family-default);
+    font-weight: var(--fw-regular);
+    font-size: 14px;
+
+    display: grid;
+    place-items: center;
+    min-height: 125vh;
+}
+
+.blog-card {
+    display: grid;
+    background-color: var(--White);
+    padding: 20px;
+    margin: 20px;
+    overflow: hidden;
+    border: 1px solid;
+    border-radius: 20px;
+    gap: 1.5rem;
+    box-shadow: 7px 7px black;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+h1 {
+    font-weight: var(--fw-bold);
+    color: var(--Gray-950);
+    font-size: 1.2rem;
+}
+
+h1:hover {
+    color: var(--Yellow);
+    cursor: pointer;
+}
+
+.blog-card-tag span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    padding-inline: 12px;
+    border-radius: 5px;
+    max-width: min-content;
+    background-color: var(--Yellow);
+    font-weight: var(--fw-bold);
+    color: var(--Gray-950);
+}
+
+.blog-card-author {
+    display: flex;
+    gap: 1rem;
+    color: var(--Gray-950);
+    font-weight: var(--fw-bold);
+}
+
+
