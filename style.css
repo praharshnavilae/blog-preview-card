@@ -48,6 +48,7 @@ body {
     border-radius: 20px;
     gap: 1.5rem;
     box-shadow: 7px 7px black;
+    max-width: 25rem;
 }
 
 img {
@@ -81,9 +82,15 @@ h1:hover {
 
 .blog-card-author {
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
     gap: 1rem;
     color: var(--Gray-950);
     font-weight: var(--fw-bold);
+}
+
+.blog-card-author img {
+    width: 40px;
 }
 
 
